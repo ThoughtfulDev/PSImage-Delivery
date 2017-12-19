@@ -2,7 +2,7 @@
 
 ## What does this do?
 
-**The binary will download the image from the url save it as `mia.png` and then run the powershell payload which will run your payload from `payload.ps1` and then show the image which it just downloaded. After this it will delete itself**
+**The binary will download the image from the url save it as `mia.png` and then run the powershell payload from within the Image and then show the image which it just downloaded. After this it will delete itself**
 
 
 
